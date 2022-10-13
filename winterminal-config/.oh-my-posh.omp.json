@@ -58,6 +58,14 @@
           "type": "time"
         },
         {
+          "style": "plain",
+          "foreground": "#7FD5EA ",
+          "properties":{
+            "template": "\uFCD1 {{ .Full }}"
+          },
+          "type": "go"
+        },
+        {
           "foreground": "#8ec07c",
           "properties": {
             "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} "
