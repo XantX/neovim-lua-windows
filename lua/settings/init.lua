@@ -15,7 +15,8 @@ set.tabstop = 2
 set.shiftwidth = 2
 set.softtabstop = 2
 set.expandtab = true
-
+--set.shell = 'pwsh'
+--set.shell = 'powershell'
 --set.autochdir = true
 set.wildmenu = true
 set.clipboard = 'unnamedplus'
