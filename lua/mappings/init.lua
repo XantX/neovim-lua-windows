@@ -6,6 +6,7 @@ vim.g.mapleader = ' '
 -- General mappings
 map('n', '<leader>nt', ':NvimTreeToggle<CR>', opts)
 map('n', '<leader>q', ':q<CR>', opts)
+map('n', '<leader>z', ':setlocal spell!<CR>', opts)
 map('n', '<leader>w', ':w<CR>', opts)
 
 -- Barbar mappings

@@ -2,7 +2,6 @@ local set = vim.opt
 vim.notify = require("notify")
 
 set.expandtab = true
-set.spell = true
 set.spelllang = "en,es"
 set.smarttab = true
 set.rnu = true
