@@ -1,7 +1,8 @@
 #Alias
 Set-Alias vim nvim
 Set-Alias ll ls
-Set-Alias la 'ls -Force'
+function listAll { Get-ChildItem -Force }
+Set-Alias la listAll
 Set-Alias g git
 Set-Alias grep findstr
 Set-Alias tig 'C:\Program Files\Git\usr\bin\tig.exe'
