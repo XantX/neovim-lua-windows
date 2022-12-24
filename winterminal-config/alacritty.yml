@@ -61,7 +61,7 @@ font:
 
 
 window:
-  opacity: 0.70 
+  opacity: 0.90 
   dynamic_padding: false
   decorations: None 
   dimensions:

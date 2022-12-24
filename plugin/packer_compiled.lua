@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\XantX\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspsaga.nvim",
     url = "https://github.com/glepnir/lspsaga.nvim"
   },
+  ["luatab.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\XantX\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\luatab.nvim",
+    url = "https://github.com/alvarosevilla95/luatab.nvim"
+  },
   ["markdown-preview.nvim"] = {
     loaded = false,
     needs_bufread = false,
@@ -200,6 +205,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\XantX\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["rest.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\XantX\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rest.nvim",
+    url = "https://github.com/rest-nvim/rest.nvim"
   },
   ["rose-pine"] = {
     loaded = true,

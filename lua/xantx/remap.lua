@@ -14,6 +14,8 @@ map('n', '<M-h>', ':vertical resize -2<CR>', opts)
 map('n', '<M-l>', ':vertical resize +2<CR>', opts)
 map('n', '<leader>vs', ':vsp <CR>', opts)
 map('n', '<leader>nt', ':NvimTreeToggle <CR>', opts)
+map('n', '<leader>ne', ':tabnext <CR>', opts)
+map('n', '<leader>pe', ':tabprevious <CR>', opts)
 
 map('n', '<leader>th', ':ToggleTerm direction=horizontal <CR>', opts)
 
