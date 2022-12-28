@@ -4,7 +4,12 @@ if not ok then
   return
 end
 
-saga.init_lsp_saga()
+saga.init_lsp_saga({
+  code_action_icon = "💡",
+  code_action_lightbulb = {
+      sign = false,
+  },
+})
 
 local keymap = vim.keymap.set
 -- Lsp finder find the symbol definition implement reference
