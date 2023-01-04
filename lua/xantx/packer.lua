@@ -37,7 +37,8 @@ return require('packer').startup(function(use)
 
 		  -- Snippets
 		  {'L3MON4D3/LuaSnip'},
-		  {'rafamadriz/friendly-snippets'},
+      {'honza/vim-snippets'},
+		  --{'rafamadriz/friendly-snippets'},
 	  }
   }
   use 'windwp/nvim-autopairs'
@@ -65,5 +66,8 @@ return require('packer').startup(function(use)
   use { 'alvarosevilla95/luatab.nvim', requires='kyazdani42/nvim-web-devicons' }
   use {
     'lewis6991/gitsigns.nvim',
+  }
+  use {
+    "folke/zen-mode.nvim",
   }
 end)

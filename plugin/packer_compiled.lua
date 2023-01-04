@@ -104,11 +104,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\XantX\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "C:\\Users\\XantX\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
-    url = "https://github.com/rafamadriz/friendly-snippets"
-  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "C:\\Users\\XantX\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gitsigns.nvim",
@@ -241,10 +236,20 @@ _G.packer_plugins = {
     path = "C:\\Users\\XantX\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
+  ["vim-snippets"] = {
+    loaded = true,
+    path = "C:\\Users\\XantX\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-snippets",
+    url = "https://github.com/honza/vim-snippets"
+  },
   ["vim-tmux-navigator"] = {
     loaded = true,
     path = "C:\\Users\\XantX\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  ["zen-mode.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\XantX\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\zen-mode.nvim",
+    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 
