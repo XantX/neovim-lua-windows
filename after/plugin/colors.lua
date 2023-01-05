@@ -9,4 +9,5 @@ function ColorMyPencil(color)
 end
 --vim.cmd([[colorscheme gruvbox]])
 ColorMyPencil("rose-pine")
+--ColorMyPencil("gruvbox")
 
