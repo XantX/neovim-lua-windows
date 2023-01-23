@@ -4,7 +4,7 @@ if not ok then
   return
 end
 
-saga.init_lsp_saga({
+saga.setup({
   code_action_icon = "💡",
   code_action_lightbulb = {
       sign = false,
