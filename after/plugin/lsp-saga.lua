@@ -9,6 +9,9 @@ saga.setup({
   code_action_lightbulb = {
       sign = false,
   },
+  lightbulb = {
+    virtual_text = false,
+  },
 })
 
 local keymap = vim.keymap.set
