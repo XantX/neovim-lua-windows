@@ -19,8 +19,15 @@ function openFolderOfWaima { set-location 'D:\Trabajo\cloudappi\proyectos\waima\
 Set-Alias waima openFolderOfWaima
 
 function gitCheckoutBranch { 
-  $branch=(git branch | fzf --height 40%) 
-  git checkout $branch.Trim()
+  $result=(git branch | fzf --height 50%) 
+  if($result) {
+     $branch= $result.IndexOf("*")
+     if($branch -eq -1) {
+        git checkout $result.Trim()
+     } else {
+        echo 'Existe asterisco'
+    }
+  }
 }
 
 Set-Alias gtc gitCheckoutBranch
