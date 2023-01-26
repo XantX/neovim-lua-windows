@@ -6,8 +6,7 @@ add_newline = true
 
 
 # Move the directory to the second line
-format = """
-$sudo\
+format = """ $sudo\
 $username\
 $hostname\
 $directory\
@@ -30,16 +29,16 @@ $lua\
 $php\
 $python\
 $rust\
-$golang$nodejs$cmd_duration$time$os \
+$golang$nodejs$cmd_duration$time \
 $line_break\
 $character"""
 
 [fill]
 symbol = " "
 # Replace the '❯' symbol in the prompt with '➜'
-#[character] # The name of the module we are configuring is 'character'
-#success_symbol = '[❯](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
-#error_symbol = '[](bold red)'
+[character] # The name of the module we are configuring is 'character'
+success_symbol = ' [❯](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+error_symbol = ' [](bold red)'
 
 [nodejs]
 format = "[$symbol($version )]($style)"
@@ -69,13 +68,6 @@ style = "yellow"
 disabled = false
 format = "[$time]($style) "
 
-
-[os]
-disabled = false
-
-[os.symbols]
-Windows=""
-
 [sudo]
 disabled = false
 
@@ -93,3 +85,10 @@ format = "[$symbol$version]($style) "
 [java]
 format = "[$symbol($version )]($style)"
 symbol = "☕ "
+
+[git_metrics]
+disabled = false
+format = "([+$added]($added_style) )([-$deleted]($deleted_style) )"
+
+[lua]
+format = "[$symbol ($version)]($style)"
