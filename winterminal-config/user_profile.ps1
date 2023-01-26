@@ -19,15 +19,37 @@ function openFolderOfWaima { set-location 'D:\Trabajo\cloudappi\proyectos\waima\
 Set-Alias waima openFolderOfWaima
 
 function gitCheckoutBranch { 
-  $result=(git branch | fzf --height 50%) 
+  $result=(git branch | fzf --height 50%).Trim()
   if($result) {
      $branch= $result.IndexOf("*")
      if($branch -eq -1) {
-        git checkout $result.Trim()
+        git checkout $result
      } else {
-        echo 'Existe asterisco'
     }
   }
 }
 
 Set-Alias gtc gitCheckoutBranch
+
+function gitDeleteBranch {
+  $result=(git branch | fzf --height 50%).Trim()
+  if($result) {
+    $branch= $result.IndexOf("*")
+    if($branch -eq -1) {
+      do {
+        $respuesta = Read-Host "Esta seguro que quiere eliminar la rama local: $result (S/N)"
+        if($respuesta) {
+          switch ( $respuesta ){
+            'S' { git branch -d $result }
+            'N' {  }
+            default { }
+          }
+        }
+      }until($respuesta -eq 'S' -or $respuesta -eq 'N')
+
+      #git branch -d $result.Trim()
+    } else {}
+  }
+}
+
+Set-Alias gdb gitDeleteBranch
