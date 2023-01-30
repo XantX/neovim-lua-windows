@@ -76,4 +76,5 @@ return require('packer').startup(function(use)
   use {
     "barrett-ruth/telescope-http.nvim"
   }
+  use { "nvim-telescope/telescope-file-browser.nvim" }
 end)
