@@ -24,4 +24,4 @@ function Status_line()
   )
 end
 
-vim.o.statusline="%!luaeval('Status_line()')"
+--vim.o.statusline="%!luaeval('Status_line()')"

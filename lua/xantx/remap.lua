@@ -18,4 +18,5 @@ map('n', '<leader>ne', ':tabnext <CR>', opts)
 map('n', '<leader>pe', ':tabprevious <CR>', opts)
 
 map('n', '<leader>th', ':ToggleTerm direction=horizontal <CR>', opts)
+map('n', '<leader>h', ':Telescope help_tags<CR>', opts)
 
