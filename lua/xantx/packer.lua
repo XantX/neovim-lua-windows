@@ -73,4 +73,7 @@ return require('packer').startup(function(use)
   use {
     "norcalli/nvim-colorizer.lua"
   }
+  use {
+    "barrett-ruth/telescope-http.nvim"
+  }
 end)
