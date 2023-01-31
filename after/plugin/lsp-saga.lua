@@ -50,8 +50,8 @@ keymap("n", "]E", function()
   require("lspsaga.diagnostic").goto_next({ severity = vim.diagnostic.severity.ERROR })
 end, { silent = true })
 
--- Outline
-keymap("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", { silent = true })
+-- Toggle outline
+keymap("n","<leader>o", "<cmd>Lspsaga outline<CR>")
 
 -- Hover Doc
 keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>", { silent = true })
