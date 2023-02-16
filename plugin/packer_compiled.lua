@@ -221,6 +221,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\XantX\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
+  ["swagger-preview.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\XantX\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\swagger-preview.nvim",
+    url = "https://github.com/vinnymeller/swagger-preview.nvim"
+  },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
     path = "C:\\Users\\XantX\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-file-browser.nvim",

@@ -77,4 +77,8 @@ return require('packer').startup(function(use)
     "barrett-ruth/telescope-http.nvim"
   }
   use { "nvim-telescope/telescope-file-browser.nvim" }
+  use {
+      "vinnymeller/swagger-preview.nvim",
+      run = "npm install -g swagger-ui-watcher",
+  }
 end)
