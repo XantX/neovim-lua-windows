@@ -81,4 +81,8 @@ return require('packer').startup(function(use)
       "vinnymeller/swagger-preview.nvim",
       run = "npm install -g swagger-ui-watcher",
   }
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 end)
