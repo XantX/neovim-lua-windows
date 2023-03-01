@@ -17,9 +17,10 @@ $git_metrics\
 $git_status\
 $hg_branch\
 $fill\
-$docker_context\
 $package\
+$docker_context\
 $c\
+$container\
 $cmake\
 $dart\
 $dotnet\
@@ -92,3 +93,9 @@ format = "([+$added]($added_style) )([-$deleted]($deleted_style) )"
 
 [lua]
 format = "[$symbol ($version)]($style)"
+
+[docker_context]
+format = '[🐋 $context](blue bold)'
+
+[container]
+format = '[$symbol \[$name\]]($style) '
