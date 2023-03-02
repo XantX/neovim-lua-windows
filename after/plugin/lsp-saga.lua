@@ -7,12 +7,17 @@ end
 vim.opt.signcolumn = 'yes'
 
 saga.setup({
+  ui = {
+    border = "rounded",
+    expand = "",
+    collapse = "",
+    code_action = "💡",
+    incoming = " ",
+    outgoing = " ",
+    hover = ' ',
+  },
   code_action = {
     extend_gitsigns = false,
-  },
-  code_action_icon = "💡",
-  code_action_lightbulb = {
-      sign = false,
   },
   lightbulb = {
     enable = true,

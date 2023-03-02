@@ -6,6 +6,7 @@ function ColorMyPencil(color)
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 	vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })
+	vim.api.nvim_set_hl(0, "SagaBorder", { bg = "none", fg="#665c54"  })
   if(color == 'gruvbox') then
     vim.api.nvim_set_hl(0, "GruvboxGreenSign", { fg="#b8bb26", bg = "none" })
     vim.api.nvim_set_hl(0, "GruvboxAquaSign", { fg="#8ec07c", bg = "none" })
