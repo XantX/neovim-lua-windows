@@ -4,13 +4,21 @@ if not ok then
   return
 end
 
+vim.opt.signcolumn = 'yes'
+
 saga.setup({
+  code_action = {
+    extend_gitsigns = false,
+  },
   code_action_icon = "💡",
   code_action_lightbulb = {
       sign = false,
   },
   lightbulb = {
-    virtual_text = false,
+    enable = true,
+    enable_in_insert = false,
+    sign = false,
+    virtual_text = true,
   },
 })
 
