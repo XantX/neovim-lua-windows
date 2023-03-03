@@ -1,7 +1,6 @@
 
 local ok, builtin = pcall(require, 'telescope.builtin')
 
-require('telescope').load_extension 'http'
 require('telescope').load_extension 'file_browser'
 
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})

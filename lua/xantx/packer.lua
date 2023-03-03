@@ -69,9 +69,6 @@ return require('packer').startup(function(use)
   use {
     "norcalli/nvim-colorizer.lua"
   }
-  use {
-    "barrett-ruth/telescope-http.nvim"
-  }
   use { "nvim-telescope/telescope-file-browser.nvim" }
   use {
       "vinnymeller/swagger-preview.nvim",
