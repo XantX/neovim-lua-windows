@@ -5,5 +5,8 @@ end
 toggleterm.setup({
   open_mapping = [[<c-\>]],
   direction = 'horizontal',
-  shell = 'pwsh'
+  shell = 'pwsh',
+  float_opts = {
+    border = "curved",
+  },
 })

@@ -8,6 +8,7 @@ vim.opt.signcolumn = 'yes'
 
 saga.setup({
   ui = {
+    theme = "round",
     border = "rounded",
     expand = "",
     collapse = "",
