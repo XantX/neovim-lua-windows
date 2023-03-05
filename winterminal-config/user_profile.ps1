@@ -15,9 +15,9 @@ Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
 Set-Alias touch New-item
 Set-Alias p pwd
 Set-Alias nvrc nvimrc
-function openFolderOfWaima { set-location 'D:\Trabajo\cloudappi\proyectos\waima\' }
+function openFolderOfWaima { set-location 'E:\Trabajo\cloudappi\proyectos\waima\' }
 Set-Alias waima openFolderOfWaima
-function goToDesa { set-location 'D:\desarrollo\'}
+function goToDesa { set-location 'E:\desarrollo\'}
 Set-Alias desa goToDesa
 
 function gitCheckoutBranch { 
