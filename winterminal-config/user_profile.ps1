@@ -40,7 +40,7 @@ function gitDeleteBranch {
     $actualBranch= $selectedBranch.IndexOf("*")
     if($actualBranch -eq -1) {
       do {
-        $response = Read-Host "Esta seguro que quiere eliminar la rama local: $result (S/N)"
+        $response = Read-Host "Esta seguro que quiere eliminar la rama local: $selectedBranch (S/N)"
         if($response) {
           switch ( $response ){
             'S' { git branch -d $selectedBranch }
@@ -54,6 +54,8 @@ function gitDeleteBranch {
 }
 function showGitBranches {git branch}
 function showGitLogOneLine {git log --graph --oneline}
+function showGitStatus { git status }
 Set-Alias gdb gitDeleteBranch
 Set-Alias gb showGitBranches 
 Set-Alias gll showGitLogOneLine
+Set-Alias gst showGitStatus
