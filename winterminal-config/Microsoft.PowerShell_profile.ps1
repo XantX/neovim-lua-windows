@@ -10,9 +10,9 @@ if ($host.Name -eq 'ConsoleHost')
     Import-Module PSReadLine
 }
 Import-Module -Name Terminal-Icons
-Import-Module oh-my-posh
+#Import-Module oh-my-posh
 
-oh-my-posh --init --shell pwsh --config ~/AppData/Local/nvim/winterminal-config/.oh-my-posh.omp.json | Invoke-Expression
+#oh-my-posh --init --shell pwsh --config ~/AppData/Local/nvim/winterminal-config/.oh-my-posh.omp.json | Invoke-Expression
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -EditMode Windows
 Set-PSReadLineOption -BellStyle None
@@ -22,3 +22,4 @@ function which ($command)  {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
+Invoke-Expression (&starship init powershell)
