@@ -1,12 +1,12 @@
 #Alias
-function configWorkGitProfile { 
-  git config --local user.name "Sebastian Diaz" &
-  git config --local user.email "sebastian.diaz.pe@cloudappi.net"}
 function listAll { Get-ChildItem -Force }
 function nvimrc  { set-location "C:\Users\XantX\AppData\Local\nvim\" }
 Set-Alias vim nvim
 Set-Alias ll ls
 Set-Alias gcnf configWorkGitProfile
+function configWorkGitProfile { 
+  git config --local user.name "Sebastian Diaz" &
+  git config --local user.email "sebastian.diaz.pe@cloudappi.net"}
 Set-Alias la listAll
 Set-Alias g git
 Set-Alias grep findstr
@@ -59,3 +59,22 @@ Set-Alias gdb gitDeleteBranch
 Set-Alias gb showGitBranches 
 Set-Alias gll showGitLogOneLine
 Set-Alias gst showGitStatus
+function showNodeVersions {
+    $listaDeVersiones = nvm list
+    $listaDeVersiones = $listaDeVersiones.Trim()
+    $versionSelecionada=($listaDeVersiones|fzf --height 50%)
+    if($versionSelecionada) {
+      $numeroVersion = ""
+      if($versionSelecionada -match '\d{1,3}\.\d{1,3}\.\d{1,3}'){
+          $numeroVersion = $Matches[0]
+      }
+      if($versionSelecionada -match '\*') {
+        Write-Host "La version actual es" $numeroVersion
+        return
+      }
+      nvm use $versionSelecionada
+    }
+}
+
+
+Set-Alias nvuse showNodeVersions
