@@ -24,3 +24,5 @@ map('n', '<leader>h', ':Telescope help_tags<CR>', opts)
 map('n', '<leader>ne', ':bnext<CR>', opts)
 map('n', '<leader>pe', ':bprevious<CR>', opts)
 map('n', '<leader>e', ':bdelete<CR>', opts)
+
+map('n', "<leader>rr", ":lua require('rest-nvim').run()<CR>", { noremap = true })
