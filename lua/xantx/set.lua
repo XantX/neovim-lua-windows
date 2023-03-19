@@ -5,6 +5,7 @@ vim.opt.clipboard = 'unnamedplus'
 vim.opt.fileencoding = 'utf-8'
 vim.opt.cursorline = true
 vim.opt.guifont = "FiraCode NF"
+vim.opt.spelllang = "es,en_us"
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
