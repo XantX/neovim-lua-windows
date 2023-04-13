@@ -39,7 +39,7 @@ return require('packer').startup(function(use)
 		  -- Snippets
 		  {'L3MON4D3/LuaSnip'},
       {'honza/vim-snippets'},
-		  --{'rafamadriz/friendly-snippets'},
+		  {'rafamadriz/friendly-snippets'},
 	  }
   }
   use 'windwp/nvim-autopairs'
@@ -79,4 +79,5 @@ return require('packer').startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
   use 'numToStr/Comment.nvim'
+  use 'lervag/vimtex'
 end)
