@@ -3,7 +3,7 @@ if not ok then
   return
 end
 nvim_treesitter.setup {
-  ensure_installed = {"help", "javascript","typescript", "lua", "rust", "c", "cpp", "vim" },
+  ensure_installed = {"help", "javascript","typescript", "lua", "rust", "c", "cpp", "vim" , "sql"},
   sync_install = false,
   auto_install = true,
   autotag = {
