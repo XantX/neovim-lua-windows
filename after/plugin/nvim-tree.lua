@@ -10,8 +10,10 @@ vim.g.loaded_netrwPlugin = 1
 nvim_tree.setup({
   sort_by = "case_sensitive",
   disable_netrw = true,
+  auto_reload_on_write = true,
   view = {
     adaptive_size = false,
+    side="right"
   },
   renderer = {
     group_empty = false,
