@@ -18,6 +18,6 @@ function ColorMyPencil(color)
   require 'colorizer'.setup()
 end
 --vim.cmd([[colorscheme gruvbox]])
---ColorMyPencil("rose-pine")
-ColorMyPencil("gruvbox")
+ColorMyPencil("rose-pine")
+--ColorMyPencil("gruvbox")
 
