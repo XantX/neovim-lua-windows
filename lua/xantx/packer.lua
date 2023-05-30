@@ -80,4 +80,6 @@ return require('packer').startup(function(use)
   }
   use 'numToStr/Comment.nvim'
   use 'lervag/vimtex'
+  use 'simrat39/rust-tools.nvim'
+  use 'mfussenegger/nvim-dap'
 end)
