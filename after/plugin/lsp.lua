@@ -49,3 +49,10 @@ cmp.setup({
     ['<CR>'] = cmp.mapping.confirm({ select = false }),
   }
 })
+require('lspconfig').ltex.setup({
+  settings = {
+		ltex = {
+			language = "es",
+		},
+	},
+})
