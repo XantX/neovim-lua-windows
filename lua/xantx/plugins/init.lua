@@ -1,6 +1,10 @@
 return {
   { "folke/lazy.nvim", version = false },
   {
+      'numToStr/Comment.nvim',
+      lazy = false,
+  },
+  {
     'windwp/nvim-autopairs',
     opts = {
       enable_check_bracket_line = false,
@@ -17,5 +21,5 @@ return {
      'NvChad/nvim-colorizer.lua',
      ft = { 'css', 'javascript', 'vim', 'html', 'lua' },
      opts = {},
-   },
+   }
 }
