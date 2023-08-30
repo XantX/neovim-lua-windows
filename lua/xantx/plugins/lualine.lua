@@ -36,27 +36,9 @@ return {
         lualine_y = {},
         lualine_z = {}
       },
-      tabline = {
-        lualine_a = {
-          {
-            'buffers',
-            show_filename_only = true,
-            hide_filename_extension = false,
-            show_modified_status = true,
-            filetype_names = {
-              TelescopePrompt = 'Telescope',
-              packer = 'Packer',
-            },
-            symbols = {
-              modified = ' ●',
-              alternate_file = '#',
-              directory =  '',
-            },
-          }
-        }
-      },
+      tabline = {},
       winbar = {},
       inactive_winbar = {},
-      extensions = {'nvim-tree', 'fugitive', 'toggleterm', 'quickfix'}
+      extensions = {'neo-tree', 'fugitive', 'toggleterm', 'quickfix', 'lazy'}
     }
 }

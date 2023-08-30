@@ -10,7 +10,7 @@ return {
     {
       "<leader>nt",
       function()
-        require("neo-tree.command").execute({ toggle = true, dir = vim.loop.cwd() })
+        require("neo-tree.command").execute({ position='right', toggle = true, dir = vim.loop.cwd() })
       end,
       desc = "Explorer NeoTree (cwd)",
     }
@@ -33,8 +33,14 @@ return {
       bind_to_cwd = false,
       follow_current_file = { enabled = true },
       use_libuv_file_watcher = true,
+      hide_dotfiles = false,
+      hide_hidden = false,
+      hide_by_name = {
+        "node_modules"
+      },
     },
     window = {
+      position = "right",
       mappings = {
         ["<space>"] = "none",
       },
