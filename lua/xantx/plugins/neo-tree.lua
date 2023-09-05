@@ -53,6 +53,14 @@ return {
         expander_highlight = "NeoTreeExpander",
       },
     },
+    event_handlers = {
+      {
+        event = "file_opened",
+        handler = function(arg)
+          require("neo-tree").close_all()
+        end,
+      }
+    }
   },
   config = function(_, opts)
     require("neo-tree").setup(opts)
