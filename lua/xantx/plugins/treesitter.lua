@@ -15,7 +15,7 @@ return  {
     },
   },
   opts = {
-    ensure_installed = {"javascript","typescript", "lua", "rust", "c", "cpp", "vim" , "sql", "markdown", "markdown_inline"},
+    ensure_installed = {"javascript","typescript" ,"lua", "rust", "c", "cpp", "vim" , "sql", "markdown", "markdown_inline"},
     sync_install = false,
     auto_install = true,
     autotag = {
@@ -25,5 +25,8 @@ return  {
       enable = true,
       additional_vim_regex_highlighting = false,
     },
-  }
+  },
+  config = function (_, opts)
+     require("nvim-treesitter.configs").setup(opts)
+  end
 }

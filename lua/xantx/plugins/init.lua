@@ -14,7 +14,14 @@ return {
     event = 'BufReadPost',
   },
   'windwp/nvim-ts-autotag',
-  'kylechui/nvim-surround',
+  {
+      "kylechui/nvim-surround",
+      version = "*",
+      event = "VeryLazy",
+      config = function()
+          require("nvim-surround").setup({})
+      end
+  },
   {'christoomey/vim-tmux-navigator', event = "VeryLazy"},
   'kyazdani42/nvim-web-devicons',
   {

@@ -21,8 +21,8 @@ return {
           virtual_text = true,
         }
     },
-    config = function()
-        require('lspsaga').setup({})
+    config = function(_, opts)
+        require('lspsaga').setup(opts)
         local keymap = vim.keymap.set
         -- Lsp finder find the symbol definition implement reference
         -- if there is no implement it will hide
