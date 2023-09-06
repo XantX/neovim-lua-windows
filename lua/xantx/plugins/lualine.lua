@@ -1,9 +1,9 @@
 return {
     "nvim-lualine/lualine.nvim",
     dependencies = { "kyazdani42/nvim-web-devicons" },
-    event = "VeryLazy",
     opts = {
       options = {
+        theme = 'auto',
         icons_enabled = true,
         component_separators = { left = '', right = ''},
         section_separators = { left = '', right = ''},
@@ -25,7 +25,7 @@ return {
         lualine_b = {'branch', 'diff', 'diagnostics'},
         lualine_c = {'filename'},
         lualine_x = {'filetype'},
-        lualine_y = {'progress'},
+        lualine_y = {},
         lualine_z = {'location'}
       },
       inactive_sections = {

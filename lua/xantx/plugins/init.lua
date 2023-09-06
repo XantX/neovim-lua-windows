@@ -2,7 +2,8 @@ return {
   { "folke/lazy.nvim", version = false },
   {
       'numToStr/Comment.nvim',
-      lazy = false,
+      event = { "BufReadPre", "BufNewFile"},
+      config = true
   },
   {
     'windwp/nvim-autopairs',
