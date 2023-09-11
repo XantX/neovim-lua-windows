@@ -3,6 +3,7 @@ return {
     opts = {
         ui = {
           theme = "round",
+          title = "true",
           border = "rounded",
           expand = "",
           collapse = "",
