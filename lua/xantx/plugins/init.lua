@@ -1,4 +1,6 @@
 return {
+
+  {'ThePrimeagen/vim-be-good'},
   { "folke/lazy.nvim", version = false },
   {
       'numToStr/Comment.nvim',
