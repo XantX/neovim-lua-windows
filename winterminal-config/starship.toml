@@ -67,7 +67,7 @@ style = "yellow"
 
 [time]
 disabled = false
-format = "[$time]($style) "
+format = "[󰥔 $time]($style) "
 
 [sudo]
 disabled = false

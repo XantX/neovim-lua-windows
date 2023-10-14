@@ -29,7 +29,7 @@ return {
   'kyazdani42/nvim-web-devicons',
   {
      'NvChad/nvim-colorizer.lua',
-     ft = { 'css', 'javascript', 'vim', 'html', 'lua' },
+     ft = { 'css', 'javascript', 'vim', 'html', 'lua', 'typescript'},
      opts = {},
    }
 }
