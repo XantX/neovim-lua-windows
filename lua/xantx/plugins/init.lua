@@ -1,11 +1,13 @@
 return {
-
-  {'ThePrimeagen/vim-be-good'},
   { "folke/lazy.nvim", version = false },
   {
       'numToStr/Comment.nvim',
       event = { "BufReadPre", "BufNewFile"},
       config = true
+  },
+  {
+    'wakatime/vim-wakatime',
+    event = "VeryLazy",
   },
   {
     'windwp/nvim-autopairs',
