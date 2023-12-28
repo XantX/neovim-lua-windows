@@ -36,6 +36,7 @@ return {
         'tsserver',
         'eslint',
         'lua_ls',
+        'jdtls',
       })
 
       lsp.set_preferences({
@@ -78,5 +79,7 @@ return {
           },
         },
       })
+      require('java').setup()
+      require('lspconfig').jdtls.setup({})
     end
 }
