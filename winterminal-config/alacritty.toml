@@ -1,0 +1,85 @@
+import = ['C:\Users\XantX\AppData/Roaming/alacritty/rose-pine.toml']
+live_config_reload = true
+working_directory = 'C:\Users\hp_Xa'
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[font]
+size = 15.0
+
+[font.bold]
+family = "FiraCode NF"
+style = "Bold"
+
+[font.italic]
+family = "FiraCode NF"
+style = "Medium Italic"
+
+[font.normal]
+family = "FiraCode NF"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "W"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "Minimize"
+key = "Comma"
+mods = "Alt"
+
+[scrolling]
+history = 100000
+multiplier = 3
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+
+[shell]
+program = "pwsh"
+
+[window]
+decorations = "none"
+dynamic_padding = false
+opacity = 0.9
+
+[window.dimensions]
+columns = 130
+lines = 35
+
+[window.position]
+x = 155
+y = 110

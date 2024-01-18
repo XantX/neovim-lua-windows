@@ -7,7 +7,7 @@ font:
     family: "FiraCode NF"
     style: Bold 
   italic:
-    family: "Fira Code NF"
+    family: "FiraCode NF"
     style: "Medium Italic"
   normal:
     family: "FiraCode NF"
