@@ -54,5 +54,23 @@ return {
      'NvChad/nvim-colorizer.lua',
      ft = { 'css', 'javascript', 'vim', 'html', 'lua', 'typescript'},
      opts = {},
-   }
+  },
+  {
+    "j-hui/fidget.nvim",
+    opts = {
+      notification = {
+        window = {
+          normal_hl = "NormalNC",      -- Base highlight group in the notification window
+          winblend = 0,             -- Background color opacity in the notification window
+          border = "none",            -- Border around the notification window
+          align = "bottom",           -- How to align the notification window
+        },
+      },
+      integration = {
+        ["nvim-tree"] = {
+          enable = true,              -- Integrate with nvim-tree/nvim-tree.lua (if installed)
+        },
+      },
+    },
+  }
 }
