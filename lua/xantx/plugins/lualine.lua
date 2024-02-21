@@ -1,9 +1,10 @@
 return {
     "nvim-lualine/lualine.nvim",
     dependencies = { "kyazdani42/nvim-web-devicons" },
+    event = 'ColorScheme',
     opts = {
       options = {
-        theme = 'auto',
+        theme = 'rose-pine',
         icons_enabled = true,
         component_separators = { left = '', right = ''},
         section_separators = { left = '', right = ''},

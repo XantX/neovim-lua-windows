@@ -1,45 +1,39 @@
 return {
   {
-    'nvim-java/nvim-java',
-    dependencies = {
-      'nvim-java/lua-async-await',
-      'nvim-java/nvim-java-core',
-      'nvim-java/nvim-java-test',
-      'nvim-java/nvim-java-dap',
-      'MunifTanjim/nui.nvim',
-      'neovim/nvim-lspconfig',
-      'mfussenegger/nvim-dap',
-      {
-        'williamboman/mason.nvim',
-        opts = {
-          registries = {
-            'github:nvim-java/mason-registry',
-            'github:mason-org/mason-registry',
-          },
-        },
-      }
-    },
-  },
-  { "folke/lazy.nvim", version = false },
-  {
-      'numToStr/Comment.nvim',
-      event = { "BufReadPre", "BufNewFile"},
-      config = true
+    "L3MON4D3/LuaSnip",
+    dependencies = { "rafamadriz/friendly-snippets" },
+    build = "make install_jsregexp",
+    config = function ()
+      require("luasnip.loaders.from_vscode").lazy_load()
+    end
   },
   {
     'wakatime/vim-wakatime',
     event = "VeryLazy",
   },
+  {'christoomey/vim-tmux-navigator', event = "VeryLazy"},
   {
     'windwp/nvim-autopairs',
+    event = 'BufReadPost',
     opts = {
       enable_check_bracket_line = false,
       ignored_next_char = '[%w%.]',
       fast_wrap = {},
     },
-    event = 'BufReadPost',
   },
-  'windwp/nvim-ts-autotag',
+  {
+    'windwp/nvim-ts-autotag',
+    ft = {
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+      "html"
+    },
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end
+  },
   {
       "kylechui/nvim-surround",
       version = "*",
@@ -48,12 +42,11 @@ return {
           require("nvim-surround").setup({})
       end
   },
-  {'christoomey/vim-tmux-navigator', event = "VeryLazy"},
-  'kyazdani42/nvim-web-devicons',
   {
-     'NvChad/nvim-colorizer.lua',
-     ft = { 'css', 'javascript', 'vim', 'html', 'lua', 'typescript'},
-     opts = {},
+    "iamcco/markdown-preview.nvim",
+    config = function()
+      vim.fn["mkdp#util#install"]()
+    end,
   },
   {
     "j-hui/fidget.nvim",
