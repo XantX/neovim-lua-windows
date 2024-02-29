@@ -14,12 +14,8 @@ return {
   {'christoomey/vim-tmux-navigator', event = "VeryLazy"},
   {
     'windwp/nvim-autopairs',
-    opts = {
-      enable_check_bracket_line = false,
-      ignored_next_char = '[%w%.]',
-      fast_wrap = {},
-    },
-    event = 'BufReadPost',
+    event = "InsertEnter",
+    config = true
   },
   {
     'windwp/nvim-ts-autotag',
