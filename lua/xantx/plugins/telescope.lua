@@ -8,7 +8,14 @@ return {
        { '<leader>ff', function () require 'telescope.builtin'.find_files() end },
      },
      config = function ()
-      require("telescope").setup({})
+      require("telescope").setup({
+        defaults = { 
+          file_ignore_patterns = {
+            "node_modules",
+            "target"
+          }
+        }
+      })
       require("telescope").load_extension("noice")
       require("telescope").load_extension("conflicts")
       local builtin = require('telescope.builtin')
