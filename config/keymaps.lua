@@ -5,4 +5,4 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
-map("t", "<Esc>", "<C-\\><C-n>", opts)
+map("t", "<Esc><Esc>", "<C-\\><C-n>", opts)
